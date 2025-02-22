@@ -19,7 +19,7 @@ class CheckoutResult(BaseModel):
     delivery_status : str
     confirmation_message : str
 
-# customise agent behavior
+# customise agent behavior as a fallback mechanism by using Playwright
 controller = Controller(output_model= CheckoutResult)
 
 #this controller is unreliable
