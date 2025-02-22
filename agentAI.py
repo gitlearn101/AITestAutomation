@@ -22,7 +22,7 @@ class CheckoutResult(BaseModel):
 # customise agent behavior as a fallback mechanism by using Playwright
 controller = Controller(output_model= CheckoutResult)
 
-#this controller is unreliable
+#this controller is unreliable. We will use AgentAI task but it is time consuming with Gemini model
 @controller.action('Open website')
 async def open_website(browser : BrowserContext):
     page = await browser.get_current_page()
