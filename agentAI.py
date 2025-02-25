@@ -40,7 +40,7 @@ async def get_attr_url(browser : BrowserContext):
     return ActionResult(extracted_content= f'current url is {current_url} and attr is {attr}' )
 
 async def SiteValidation():
-    os.environ["GEMINI_API_KEY"] = "AIzaSyBV92LFErRzn381B1is_XzPPAcxPF21LD0"
+    os.environ["GEMINI_API_KEY"] = "<insert api key>"
     task = (
          'Important : I am UI Automation tester validating the tasks'
          'Open website'# https://rahulshettyacademy.com/loginpagePractise/'
